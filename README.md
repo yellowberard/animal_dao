@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Problem Statement
+As we know, the number of endangered animals is increasing, and the condition of stray animals is getting worse daily. So, we are making a community-driven DAO dApp for the welfare of the animals. 
+Earlier, there was an intermediator, so donated could not deliver the funds to the right place. Through web3, we will decentralize the system, and donated funds can directly get transfered to the deserved place without centralizing the donations.
+In web2, there are no perks for the benefit of users, which doesn’t motivate them to help and be a part of this social cause.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Inspiration
+In our team, we all are animal lovers. Endangered animals are part of our history and culture; losing them would be a significant loss for future generations. Torture of stray animals is also increasing day by day. Many breeders torture animals for their fun. They live in very harsh conditions with no food and water for days. With our dApp, we aim to help animals relieve themselves from this pain and misery. And through this, we can increase awareness among people.
 
-## Available Scripts
+# Our Solution: 
+Using Web 3, we are trying to make young generations more interested in saving animals. We have kept in mind people who can donate money and those who can’t.
+There are four significant ways through which a person can help in saving the animals.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Helping with NFT:- A person willing to help an endangered animal can support them by buying the NFT for that particular animal. They can buy NFT from any coin. All the money from that NFT will go towards helping the specific animal. After buying a certain amount of NFTs, the doner will get some perks as appreciation from our side. All this process will be peer-to-peer.
+* Donating Design:- Designers willing to help towards a social cause can help us by donating designs for the NFT of the animal they like. They don’t have to pay anything; once their Design is sold, they will also get some perks.
+* Adopting Stray Animals:- We also provide a feature for adopting stray animals. People who don’t have money and want to help animals and their welfare can also adopt animals. By adopting them, they will also get perks and NFT.
+* Providing information:- People can also help by providing information about the animals for adoption. After the animal is adopted, they get some perks and NFT for providing the information.
