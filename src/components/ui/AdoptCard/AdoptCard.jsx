@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import creatorImg from "../../../assets/images/ava-01.png";
 
 import "../NftCard/nftCard.css";
 
 const AdoptCard = (props) => {
-  const { title, id, currentBid, creatorImg, imgUrl, creator } = props.item;
+  const { id, title, breed, description, email, image, location, mobile, name, provider } = props.item;
 
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="single__nft__card">
       <div className="nft__img">
-        <img src={imgUrl} alt="" className="w-100" />
+        <img src={image} alt="" className="w-100" />
       </div>
 
       <div className="nft__content">
@@ -27,7 +28,7 @@ const AdoptCard = (props) => {
           <div className="creator__info w-100 d-flex align-items-center justify-content-between">
             <div>
               <h6>Created By</h6>
-              <p>{creator}</p>
+              <p>{name}</p>
             </div>
 
           </div>

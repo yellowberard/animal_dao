@@ -150,25 +150,25 @@ const item = {
             console.log(url);
           })
 
-        //     const formData = new FormData();
-        //     formData.append("file", fileImg);
+            const formData = new FormData();
+            formData.append("file", fileImg);
 
-        //     console.log(formData) ;
+            console.log(formData) ;
 
-        //     const resFile = await axios({
-        //         method: "post",
-        //         url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
-        //         data: formData,
-        //         headers: {
-        //             'pinata_api_key': `${REACT_APP_PINATA_API_KEY}`,
-        //             'pinata_secret_api_key': `${REACT_APP_PINATA_API_SECRET}`,
-        //             "Content-Type": "multipart/form-data"
-        //         },
-        //     });
+            const resFile = await axios({
+                method: "post",
+                url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
+                data: formData,
+                headers: {
+                    'pinata_api_key': `${REACT_APP_PINATA_API_KEY}`,
+                    'pinata_secret_api_key': `${REACT_APP_PINATA_API_SECRET}`,
+                    "Content-Type": "multipart/form-data"
+                },
+            });
 
-        //   const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
-        //  console.log(ImgHash); 
-        //  e.preventDefault();
+          const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
+         console.log(ImgHash); 
+         e.preventDefault();
 
         const data = new FormData(e.target);
         const value = Object.fromEntries(data.entries());
@@ -242,27 +242,27 @@ const item = {
 
                   <div className="animalType">
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Tiger</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal1" /> 
                   </span>
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Turtle</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal2" /> 
                   </span>
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Whale</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal3" /> 
                   </span>
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Rhino</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal4" /> 
                   </span>
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Black Footed Ferret</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal5" /> 
                   </span>
                   <span className="span-type"> 
-                     <label htmlFor="">Animal Type</label>
+                     <label htmlFor="">Dolphin</label>
                     <input type="radio" placeholder="Enter title" name="type" value="animal6s" /> 
                   </span>
                   </div>

@@ -23,7 +23,7 @@ const NftDetails = () => {
     setReload(false)
   }
   useEffect(() => { 
-    onValue(ref(db , `/${id-1}`),(snapshot)=>{
+    onValue(ref(db , `/nft/${id-1}`),(snapshot)=>{
       const data = snapshot.val();
       setFormData(data);
       console.log(singleFormData);

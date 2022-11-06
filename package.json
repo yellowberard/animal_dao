@@ -24,6 +24,7 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.5",
     "remixicon": "^2.5.0",
+    "revise-sdk": "^0.1.16",
     "swiper": "^8.4.4",
     "web-vitals": "^1.1.2",
     "web3": "^1.8.0"

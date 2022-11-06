@@ -1,14 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CommonSection from "../components/ui/CommonSection/CommonSection";
 import AdoptCard from "../components/ui/AdoptCard/AdoptCard";
 import { ADOPT__DATA } from "../assets/data/data";
 import { Container, Row, Col } from "reactstrap";
 import "../styles/market.css";
+import { onValue, ref } from 'firebase/database';
+import { db } from '../firebase';
 
 const Adopt = () => {
   const [data, setData] = useState(ADOPT__DATA);
   const handleCategory = () => {};
   const handleItems = () => {};
+
+  const [reload, setReload] = useState(true);
+  const [formData, setFormData] = useState([]);
+  if(formData===[]){
+    setReload(false)
+  }
+  useEffect(() => { 
+    onValue(ref(db , '/adopt/'),(snapshot)=>{
+      const data = snapshot.val();
+      setFormData(data);
+    });
+    console.log(formData);
+  }, [reload]);
+
 
   const handleSort = (e) => {
     const filterValue = e.target.value;
@@ -77,7 +93,7 @@ const Adopt = () => {
               </div>
             </Col>
 
-            {data?.map((item) => (
+            {formData?.map((item) => (
               <Col lg="3" md="4" sm="6" className="mb-4" key={item.id}>
                 <AdoptCard item={item} />
               </Col>
