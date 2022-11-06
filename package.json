@@ -16,6 +16,7 @@
     "bootstrap": "^5.1.3",
     "ethers": "^5.7.2",
     "firebase": "^9.13.0",
+    "hardhat": "^2.12.2",
     "ipfs-http-client": "^59.0.0",
     "mdb-react-ui-kit": "^5.0.0",
     "react": "^18.2.0",
@@ -26,6 +27,7 @@
     "reactstrap": "^9.1.5",
     "remixicon": "^2.5.0",
     "revise-sdk": "^0.1.16",
+    "solidity": "^0.0.1",
     "swiper": "^8.4.4",
     "web-vitals": "^1.1.2",
     "web3": "^1.8.0"

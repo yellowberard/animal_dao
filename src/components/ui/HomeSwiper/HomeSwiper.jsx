@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination} from 'swiper';
 import "swiper/css";
@@ -11,15 +11,30 @@ import { Autoplay } from "swiper";
 import metaData from './metaDataSwiper.json'
 import "./SwiperSlider.css";
 import img from "../../../assets/images/nft-1.png";
+import { onValue, ref } from 'firebase/database';
+import { db } from '../../../firebase';
 
 // import required modules
 import { EffectCards } from "swiper";
 
 export default function HomeSwiper() {
   
+  const [reload, setReload] = useState(true);
+  const [formData, setFormData] = useState([]);
+  if(formData===[]){
+    setReload(false)
+  }
+  useEffect(() => { 
+    onValue(ref(db , '/nft/'),(snapshot)=>{
+      const data = snapshot.val();
+      setFormData(data);
+    });
+    console.log(formData);
+  }, [reload]);
+
   return (
     <>
-    {metaData.list.map((row,index)=>
+    {formData.map((row,index)=>
     <style key={index}>{"#s" + row.idnft + ":after{content:'';position: absolute; z-index: -1; width:100%;height: 100%;display: block; background-image:url(" + row.image + ");background-position: center;filter: blur(18px);}"}</style>
     )}
       <Swiper
@@ -34,11 +49,11 @@ export default function HomeSwiper() {
         autoplay={{delay:2000}}
         speed={1000}
       >
-        {metaData.list.map((row,index)=>
+        {formData.map((row,index)=>
         <SwiperSlide key={index}>
           <>
           <div className="w-100 h-100 d-flex align-items-center position-relative" id={"s"+row.idnft} >
-          <img className="slidPic" src={img} alt=""/>
+          <img className="slidPic" src={row.image} alt=""/>
           </div>
         </>
           </SwiperSlide>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+
+import { onValue, ref } from 'firebase/database';
+import { db } from '../../../firebase';
 
 import NftCard from "../NftCard/NftCard";
 import { NFT__DATA } from "../../../assets/data/data.js";
@@ -8,6 +11,20 @@ import { NFT__DATA } from "../../../assets/data/data.js";
 import "./liveAuction.css";
 
 const LiveAuction = () => {
+
+  const [reload, setReload] = useState(true);
+  const [formData, setFormData] = useState([]);
+  if(formData===[]){
+    setReload(false)
+  }
+  useEffect(() => { 
+    onValue(ref(db , '/nft/'),(snapshot)=>{
+      const data = snapshot.val();
+      setFormData(data);
+    });
+    console.log(formData);
+  }, [reload]);
+
   return (
     <section>
       <Container>
@@ -21,7 +38,7 @@ const LiveAuction = () => {
             </div>
           </Col>
 
-          {NFT__DATA.slice(0, 4).map((item) => (
+          {formData.slice(4, 8).map((item) => (
             <Col lg="3" md="4" sm="6" className="mb-4">
               <NftCard key={item.id} item={item} />
             </Col>

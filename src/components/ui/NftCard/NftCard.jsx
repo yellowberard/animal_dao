@@ -33,7 +33,7 @@ const NftCard = (props) => {
 
             <div>
               <h6>Floor Price</h6>
-              <p>{base} ETH</p>
+              <p>{base} ANT</p>
             </div>
           </div>
         </div>
