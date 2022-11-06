@@ -43,24 +43,24 @@ const RESOURCES = [
   },
 ];
 
-const COMPANY = [
-  {
-    display: "About",
-    url: "#",
-  },
-  {
-    display: "Career",
-    url: "#",
-  },
-  {
-    display: "Ranking",
-    url: "#",
-  },
-  {
-    display: "Contact Us",
-    url: "/contact",
-  },
-];
+// const COMPANY = [
+//   {
+//     display: "About",
+//     url: "#",
+//   },
+//   {
+//     display: "Career",
+//     url: "#",
+//   },
+//   {
+//     display: "Ranking",
+//     url: "#",
+//   },
+//   {
+//     display: "Contact Us",
+//     url: "/contact",
+//   },
+// ];
 
 const Footer = () => {
   return (
@@ -76,9 +76,8 @@ const Footer = () => {
                 AnimalCareDAO
               </h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, quod repellat! Quis quos dolorum tenetur fuga?
-                Aspernatur rerum quae amet.
+              The number of endangered animals is increasing, and the condition of stray animals is getting worse daily.
+                So, we have made a community-driven DAO dApp for the welfare of the animals. 
               </p>
             </div>
           </Col>
@@ -105,7 +104,7 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          <Col lg="2" md="3" sm="6" className="mb-4">
+          {/* <Col lg="2" md="3" sm="6" className="mb-4">
             <h5>Company</h5>
             <ListGroup className="list__group">
               {COMPANY.map((item, index) => (
@@ -114,7 +113,7 @@ const Footer = () => {
                 </ListGroupItem>
               ))}
             </ListGroup>
-          </Col>
+          </Col> */}
 
           <Col lg="3" md="6" sm="6" className="mb-4">
             <h5>Newsletter</h5>
