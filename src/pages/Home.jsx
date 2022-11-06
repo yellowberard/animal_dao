@@ -12,6 +12,9 @@ import CheckingIPFS from "../components/CheckingIPFS/CheckingIPFS";
 import "../styles/home.css";
 import adoptImg from "../assets/images/adopt.jpeg";
 import nftImg from "../assets/images/nft.jpg";
+import donateImg from "../assets/images/donate.jpeg";
+import infoImg from "../assets/images/info.jpeg";
+
 
 const Home = () => {
 
@@ -32,14 +35,14 @@ const Home = () => {
     },
     {
       id: "3",
-      image: "https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp",
+      image: donateImg,
       heading: "Provide Information about Stray Animals",
       info: "You can also help by providing information about the animals for adoption. After an animal is adopted, you will then get some perks and NFTs for providing their information.",
       target: "/contact"
     },
     {
       id: "4",
-      image: "https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.webp",
+      image: infoImg,
       heading: "Earn by donation design",
       info: "Designers willing to help towards a social cause can help us by donating designs for the NFT of the animal they like. You don’t have to pay anything; once their Design is sold, they will also get some perks.",
       target: "/create"
