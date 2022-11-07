@@ -8,9 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import { Autoplay } from "swiper";
-import metaData from './metaDataSwiper.json'
 import "./SwiperSlider.css";
-import img from "../../../assets/images/nft-1.png";
 import { onValue, ref } from 'firebase/database';
 import { db } from '../../../firebase';
 
@@ -46,7 +44,7 @@ export default function HomeSwiper() {
         navigation
         pagination={{ clickable: true }}
         // scrollbar={{ draggable: false }}
-        autoplay={{delay:2000}}
+        autoplay={{delay:1000}}
         speed={1000}
       >
         {formData.map((row,index)=>

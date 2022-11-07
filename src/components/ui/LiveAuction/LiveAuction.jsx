@@ -6,7 +6,6 @@ import { onValue, ref } from 'firebase/database';
 import { db } from '../../../firebase';
 
 import NftCard from "../NftCard/NftCard";
-import { NFT__DATA } from "../../../assets/data/data.js";
 
 import "./liveAuction.css";
 

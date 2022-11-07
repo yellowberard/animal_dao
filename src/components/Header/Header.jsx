@@ -30,10 +30,10 @@ const NAV__LINKS = [
     display: "Stray Info",
     url: "/contact",
   },
-  {
-    display: "Whitepaper",
-    url: "",
-  },
+  // {
+  //   display: "Whitepaper",
+  //   url: "https://docs.google.com/document/d/1mCpw7SQ1FIN1BiW9scCuJSZf7w9i3yxKiYV1w9xEczs/edit?usp=sharing",
+  // },
 ];
 
 const Header = () => {
@@ -124,6 +124,9 @@ const Header = () => {
                   </NavLink>
                 </li>
               ))}
+              <li className="nav__item">
+                <a href="https://docs.google.com/document/d/1mCpw7SQ1FIN1BiW9scCuJSZf7w9i3yxKiYV1w9xEczs/edit?usp=sharing" target="_blank">Whitepaper</a>
+              </li>
             </ul>
           </div>
 
